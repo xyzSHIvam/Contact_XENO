@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const Login = () => {
   const value=window.localStorage.getItem("token");
   const [username, setUsername] = useState(window.localStorage.getItem("username"));
-  const [password, setPassword] = useState(" ");
+  const [password, setPassword] = useState("");
   const [show, setShow] = useState(false);
   const [token, setToken] = useState(!value?false:true);
   const [H, setH] = useState(false);
