@@ -1,0 +1,119 @@
+.containerList{
+    width: 100vw;
+    height:200vh;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+   position: relative;
+    background:linear-gradient(rgba(255, 255, 255, 0.491),rgba(255, 255, 255, 0.583)),url("https://images.pexels.com/photos/15860983/pexels-photo-15860983/free-photo-of-sidewalk-between-old-red-houses.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load") center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    overflow: hidden;
+   .title{
+    font-size:4rem;
+    font-weight: 700;
+   }
+.btnlogout{
+    position: absolute;
+    top:10px;
+    left:30px;
+    font-family: 'Rancho', cursive;
+    height:3vh;
+    width: 7vw;
+    border:none;
+    font-size:1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    animation:transition 1s;
+    transition: all 0.5s ease-in-out;
+    background-color: RED;
+    margin-top:10px;
+    border-radius: 20px;
+    border:2px white solid;
+    color: aliceblue;
+} 
+.btnlogout:hover{
+    animation-play-state: paused;
+    transform: scale(1.5);
+    background-color: transparent;
+    color: rgb(4, 2, 2);
+    box-shadow: 0 0 40px #0bf4f3, 0 0 40px #0bf4f3, 0 0 80px #0bf4f3;
+    border:2px white solid;
+}
+ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;  
+  li{
+      width:50vw;
+      margin-top:30px;
+      .details{
+        width:50vw;
+        height:20vh;
+           background:linear-gradient(rgba(255, 255, 255, 0.491),rgba(255, 255, 255, 0.583)) ;
+            display: flex;
+            border-radius: 20px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size:1.2rem;
+            animation:transition 1s;
+            transition: all 0.5s ease-in-out;
+        }
+        .details:hover{
+            animation-play-state: paused;
+            transform: scale(1.2);
+            background-color: transparent;
+            color: rgb(4, 2, 2);
+            box-shadow: 0 0 40px #0bf4f3, 0 0 40px #0bf4f3, 0 0 80px #0bf4f3;
+            border:2px white solid;
+        }
+        .button{
+            .btn{
+                margin-left: 30px;
+                margin-top:5px;
+                width: 3rem;
+                height: 2rem;
+                border:none;
+                font-size:1rem;
+                border-radius: 20px;
+                cursor: pointer;
+                animation:transition 1s;
+                transition: all 0.5s ease-in-out;
+                background:linear-gradient(rgba(220, 55, 55, 0.491),rgba(212, 75, 75, 0.583)) ;
+                margin-top:10px;
+                border-radius: 20px;
+                border:2px white solid;
+                
+            }
+            .btn:hover{
+                animation-play-state: paused;
+                transform: scale(1.2);
+                background-color: transparent;
+                color: rgb(4, 2, 2);
+                box-shadow: 0 0 40px #0bf4f3, 0 0 40px #0bf4f3, 0 0 80px #0bf4f3;
+                border:2px white solid;
+            }
+        }
+    }
+}
+    .add{
+        margin-left: 30px;
+                margin-top:5px;
+                width:10rem;
+                height:2rem;
+                border:none;
+                font-size:1.5rem;
+                border-radius: 20px;
+                cursor: pointer;
+                animation:transition 1s;
+                transition: all 0.5s ease-in-out;
+                background:linear-gradient(rgb(61, 220, 55),rgb(84, 212, 75)) ;
+                margin-top:10px;
+                border-radius: 20px;
+                border:2px white solid;
+                color:white;
+    }
+}
