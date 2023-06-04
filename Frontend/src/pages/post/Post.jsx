@@ -17,7 +17,7 @@ const navigate=useNavigate();
       phone:phone,
       address:address
     }
-    await axios.post(`http://localhost:5000/contact/detail/${username}`,data, { headers: 
+    await axios.post(`https://contact-xeno.onrender.com/contact/detail/${username}`,data, { headers: 
     {"Authorization":`Bearer ${window.localStorage.getItem("token")}`,
     'Content-Type': 'application/json'
    

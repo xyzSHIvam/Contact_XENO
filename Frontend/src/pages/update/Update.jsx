@@ -23,7 +23,7 @@ const Update = () => {
         phone:phone,
         address:address
       }
-      await axios.put(`http://localhost:5000/contact/detail/update/${username}`,data, { headers: 
+      await axios.put(`https://contact-xeno.onrender.com/contact/detail/update/${username}`,data, { headers: 
       {"Authorization":`Bearer ${window.localStorage.getItem("token")}`,
       'Content-Type': 'application/json'
      

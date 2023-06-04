@@ -25,7 +25,7 @@ const List = (props) => {
 
       <button className='btn' onClick={async()=>{
         
-        const res=await axios.post(`http://localhost:5000/contact/detail/delete/${props.username}`,{id:index},
+        const res=await axios.post(`https://contact-xeno.onrender.com/contact/detail/delete/${props.username}`,{id:index},
         { headers: 
           {"Authorization":`Bearer ${window.localStorage.getItem("token")}`,
           'Content-Type': 'application/json'
@@ -40,7 +40,7 @@ const List = (props) => {
    }
 
 useEffect(()=>{
-   axios.get(`http://localhost:5000/contact/detail/${props.username}`).then(data=>{data.data==="dummy"?setList([{name:"dummy",phone:"dummy",address:"dummy"}]):setList(data.data.detail)});
+   axios.get(`https://contact-xeno.onrender.com/contact/detail/${props.username}`).then(data=>{data.data==="dummy"?setList([{name:"dummy",phone:"dummy",address:"dummy"}]):setList(data.data.detail)});
   },[])
   return (
     <div className='containerList'>
