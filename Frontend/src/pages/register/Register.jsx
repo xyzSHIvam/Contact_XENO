@@ -18,7 +18,7 @@ e.preventDefault();
     }
      try{
          
-         const res= await axios.post("https://precious-paprenjak-00cd8b.netlify.app/contact/auth/register",data);
+         const res= await axios.post("https://contact-xeno.onrender.com/contact/auth/register",data);
          res !==null && setisAdded(true)
         }catch(err){
              console.log(err)
