@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import "./List.scss"
 
 const List = (props) => {
-   const [List,setList]=useState([{name:"dummy",phone:"dummy",address:"dummy"}]);
+   const [List,setList]=useState([]);
    
    const logout=()=>{
     props.show(false)
