@@ -61,3 +61,24 @@ Sass reduces repetition of CSS and therefore saves time
 React Router DOM is a popular library used for routing in React applications. It provides a declarative way to handle navigation and URL routing within a React application.
 
 React Router DOM is specifically designed for web applications and is built on top of React Router. It extends the core functionality of React Router and adds additional features specifically for browser-based routing.
+
+## **Description:** 
+
+Brief description about the contact APP:
+
+Frontend (React):
+
+The frontend of the app is built using React, providing a user-friendly interface for managing contacts.
+Users can sign up and log in to their accounts using username and password credentials.
+Upon successful login, users are issued a JSON Web Token (JWT) that authenticates their subsequent requests to the server and the token is stored in the browsers local Storage.
+The UI communicates with the backend server to perform CRUD (Create, Read, Update, Delete) operations on contacts.
+
+Backend (Node.js with Express):
+
+The backend is built using Node.js with Express, acting as the server-side component of the application.
+MongoDB is used as the database to store contact information securely.
+When a user registers, their password is hashed using bcrypt, a password hashing library, and stored in the database.
+For user authentication, the backend verifies the user's login credentials and generates a JWT upon successful authentication.
+The backend includes endpoints for handling contact-related operations, such as adding new contacts, updating existing contacts, and deleting contacts.
+These endpoints are protected using middleware that verifies the JWT included in the request headers to ensure authenticated access.
+
